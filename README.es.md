@@ -1,4 +1,4 @@
-# Hola Mundo con Typescript
+# Gestor de reservas de asientos de cine
 
 <!-- hide -->
 > Por [@ehiber](https://github.com/ehiber) y contribuidores de [4Geeks Academy](https://4geeksacademy.com/)
@@ -9,7 +9,24 @@
 *These instructions are available in [english](./README.md).*
 <!-- endhide -->
 
-Empieza a programar un sitio con TypeScript/HTML/CSS en 30 segundos abriendo esta plantilla con [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/typescript-hello) de 4Geeks o en tu computadora local.
+Este ejercicio consiste en construir con TypeScript un sistema sencillo de reservas para una sala de cine. La sala se representa con una matriz de 8 filas y 10 columnas: `0` indica un asiento disponible y `1`, uno ocupado.
+
+El programa permite mostrar el mapa de asientos, reservar un asiento validando que exista y esté libre, contar los asientos ocupados y disponibles, y encontrar la primera pareja de asientos libres contiguos en una misma fila. La lógica principal usa arreglos bidimensionales y funciones.
+
+## Interfaz web opcional
+
+Además de los ejemplos de consola, el proyecto incluye una interfaz web para explorar y reservar asientos haciendo clic. Los asientos ocupados aparecen deshabilitados; los contadores y la primera pareja contigua disponible se actualizan después de cada reserva.
+
+Para verla en el navegador:
+
+```bash
+npm install
+npm run start
+```
+
+Abre la URL que muestra Vite en la terminal, normalmente [http://localhost:5173](http://localhost:5173). En GitHub Codespaces, abre el puerto 5173 desde la notificación de puertos.
+
+Para ejecutar los escenarios de consola, usa `npm run console`. Para comprobar los tipos de TypeScript, usa `npm run typecheck`.
 
 ## Antes de empezar
 
@@ -66,8 +83,6 @@ Depende del lenguaje:
 - `./index.html` para el HTML base.
 
 Puedes agregar mas archivos cuando quieras, solo asegúrate de importarlos desde `main.ts`.
-
-Nota: si puedes ver la tarjeta de "Hello Rigo" y el mensaje "If you can see this, Tailwind is working.", entonces Tailwind esta configurado correctamente.
 
 ## Solucion de problemas
 
